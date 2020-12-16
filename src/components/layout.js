@@ -11,9 +11,10 @@ import PropTypes from "prop-types";
 
 import "./bootstrap.min.css";
 import "./layout.css";
+import Navbar from "./globals/Navbar";
 
 const Layout = ({ children }) => <>
-  
+  <Navbar />
   {children}
   </>;
 
