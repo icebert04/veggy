@@ -3,18 +3,23 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import BackgroundSection from "../components/globals/BackgroundSection";
+// import BackgroundSection from "../components/globals/BackgroundSection";
+import Homebg from "../components/globals/Homebg"
 import Info from '../components/Home/info';
 import Menu from '../components/Home/menu';
 import Contact from '../components/Home/contact';
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <BackgroundSection 
+  <Homebg/>
+    {/* <BackgroundSection 
       img={data.img.childImageSharp.fluid}
-      title=""
-      styleClass="home-background" />
-      <Info></Info>
+      styleClass="home-background" 
+      />
+       */}
+
+    
+      <Info/>
       <Menu items={data.menu}>
       </Menu>
       <Contact />

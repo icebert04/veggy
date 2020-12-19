@@ -3,15 +3,15 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import BackgroundSection from "../components/globals/BackgroundSection";
+// import BackgroundSection from "../components/globals/BackgroundSection";
 import Info from '../components/Home/info';
 const BlogPage = ({ data }) => (
   <Layout>
     <SEO title="Blog" keywords={[`gatsby`, `application`, `react`]} />
-    <BackgroundSection 
+    {/* <BackgroundSection 
       img={data.img.childImageSharp.fluid}
       title="Articles"
-      styleClass="" />
+      styleClass="" /> */}
       <Info></Info>
     
     
