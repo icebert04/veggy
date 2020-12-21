@@ -4,6 +4,7 @@
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
+  --mainBlue: #227be0;
 }
 
 body {
@@ -62,6 +63,143 @@ h6 {
   background-position: center;
   background-size: cover;
 }
+
+.footer-center {
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+}
+
+.footer {
+  padding: 2rem 0;
+
+  color: var(--mainWhite);
+  background-color: var(--mainBlack);
+  text-align: center;
+  align-content: center !important;
+}
+
+.footer h5 {
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+}
+
+.footer p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer b {
+  font-size: 16px;
+}
+
+.footer-btn {
+  margin: 1rem;
+
+  display: inline-block;
+  text-decoration: none !important;
+  letter-spacing: 3px;
+  color: var(--mainWhite);
+  background: var(--mainBlue);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--mainBlue);
+  transition: all 0.3s linear;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  text-decoration: none !important;
+  background: transparent !important;
+  color: var(--mainWhite) !important;
+}
+
+.footer form {
+  display: block;
+}
+
+.seperator {
+  width: 5rem;
+  height: 2px;
+  margin: 0px auto;
+  background: var(--mainWhite);
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer li {
+  display: inline-block;
+  margin: 6px;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: var(--mainYellow);
+}
+
+.footer-sites {
+  font: small-caps;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--primaryColor);
+  text-transform: capitalize;
+}
+
+.footer-link li a:hover {
+  color: var(--mainYellow);
+  text-decoration: solid;
+}
+
+.footer a:hover {
+  cursor: pointer;
+}
+
+.footer-title {
+  letter-spacing: 3px;
+  text-transform: capitalize;
+
+  display: inline-block;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.footer-image {
+  margin: 15px;
+  position: relative;
+  max-width: 15rem;
+}
+
+.footer-item span {
+  align-content: center !important;
+  display: inline-block;
+  color: var(--primaryColor);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .footer-center {
+    width: 95vw;
+    max-width: 1170px;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer p {
+    width: 100%;
+  }
+}
+
 .btn-yellow {
   color: var(--mainYellow);
   border-color: var(--mainYellow);
