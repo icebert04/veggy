@@ -62,7 +62,7 @@ export default class Futer extends Component {
             <ul className="footer-sites footer-link">
             <li>
             <Link to="/" target="_blank">
-              FAQ
+              get involved
             </Link>
             </li>
               <div className="seperator" />

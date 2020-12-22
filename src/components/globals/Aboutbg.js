@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image from '../../images/about-background.png';
+import Image from '../../images/about-background.jpg';
 
 
 export default function Homebg() {
