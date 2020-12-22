@@ -13,7 +13,7 @@ export default class Futer extends Component {
         <div className="footer-center">
           <article className="footer-item">
             <h5 className="footer-title">contact us</h5>
-            <h6>Our team is at your disposal</h6>
+            <h6>For inquiries, orders, memberships, <br />and others</h6>
 
             <p>
               <b>
@@ -34,7 +34,7 @@ export default class Futer extends Component {
               <b>
                 <GrMail />
               </b>{" "}
-              admin@balayagila.com
+              admin@veggy.com
             </p>
             <br />
            
@@ -42,18 +42,18 @@ export default class Futer extends Component {
 
           <article className="footer-item">
             <div>
-              <h5  className="footer-title">Our Philippine Eagle is diminishing</h5>
-              <p>Help the Philippine Eagle Foundation in your own way</p>
+              <h5  className="footer-title">Green Manila</h5>
+              <p>Build small Vertical Farms in our own homes</p>
               <a
                 className="footer-btn"
-                href="https://www.philippineeaglefoundation.org/"
+                href="/"
                 target="_new"
               >
-                Donate
+                Join
               </a>
             </div>
             <div>
-              <img src={Plant} className="footer-image" alt="Plant Based" />
+              <img src={Plant} className="footer-image" alt="Let's Green Up" />
             </div>
           </article>
 
@@ -61,20 +61,20 @@ export default class Futer extends Component {
             <h5  className="footer-title">Site Links</h5>
             <ul className="footer-sites footer-link">
             <li>
-            <Link to="/apply" target="_blank">
+            <Link to="/" target="_blank">
               FAQ
             </Link>
             </li>
               <div className="seperator" />
             <li>
-            <Link to="/apply" target="_blank">
-              insurance
+            <Link to="/" target="_blank">
+              business opportunities
             </Link>
             </li>
               <div className="seperator" />
             <li>
-                <Link to="/apply" target="_blank">
-                  Apply As Landlord
+                <Link to="/" target="_blank">
+                  sell your products here
                 </Link>
               </li>
             </ul>
@@ -87,11 +87,11 @@ export default class Futer extends Component {
             <h5  className="footer-title">Join our exclusive facebook group</h5>
 
             <p>
-              Become part of our substantial & vibrant "Hosting Community"
-              <br /> Get inside access
+              Become part of our substantial & vibrant<br />"Plant-Based Community"
+              
             </p>
             <a
-              href="https://www.facebook.com/groups/203282164142189/"
+              href="/"
               target="_new"
               className="footer-btn"
             >
@@ -100,7 +100,7 @@ export default class Futer extends Component {
           </div>
         </div>
 
-        <h6 className="copyright text-yellow">©2020 Balay Agila - All Rights Reserved</h6>
+        <h6 className="copyright text-yellow">©2020 Balay Agila <br /> All Rights Reserved</h6>
       </section>
     );
   }
