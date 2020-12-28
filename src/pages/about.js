@@ -8,6 +8,9 @@ import Title from "../components/globals/Title"
 // import BackgroundSection from "../components/globals/BackgroundSection";
 // import Info from '../components/Home/info';
 
+import Plant from "../images/Plant-Based.jpg";
+
+
 // icons 
 import {FaWeight} from "react-icons/fa"
 import {GiLipstick, GiBodyBalance, GiLifeBar, GiGasMask, GiForestCamp,GiWaterDrop} from "react-icons/gi"
@@ -125,9 +128,20 @@ const AboutPage = ({ data }) => (
             <div className="grey-background colored-background">
             <h3>Lean, mean and green protein</h3>
             <p>Show pics with 2 different plans...</p>
-            <ul>
-              <li>Starter Plan</li>
-              <li>Premium Plan</li>
+            <ul className="li li-4">
+              <li> <h2>Starter Plan</h2>
+                <div>
+                  <img src={Plant} className="footer-image" alt="Let's Green Up" />
+                </div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, unde!</p>
+              </li>
+
+              <li><h2>Premium Plan</h2>
+                <div>
+                  <img src={Plant} className="footer-image" alt="Let's Green Up" />
+                </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, eum?</p>
+              </li>
             </ul>
             </div>
             
