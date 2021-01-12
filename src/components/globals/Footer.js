@@ -100,7 +100,7 @@ export default class Futer extends Component {
           </div>
         </div>
 
-        <h6 className="copyright text-yellow">©2020 Balay Agila <br /> All Rights Reserved</h6>
+        <h6 className="copyright text-yellow">©2021 Veggie Verde <br /> All Rights Reserved</h6>
       </section>
     );
   }

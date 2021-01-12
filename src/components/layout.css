@@ -5,6 +5,8 @@
   --mainWhite: #fff;
   --mainDark: #222;
   --mainBlue: #227be0;
+  --lightGreen: #8cc63f;
+  --darkGreen: #39b54a;
 }
 
 body {
@@ -12,6 +14,18 @@ body {
   background: var(--mainWhite);
   color: var(--mainDark);
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button {
+  border-style: none;
 }
 
 ul li {
@@ -138,6 +152,43 @@ h6 {
 /* about */
 .about-title {
   padding: 2.5rem 0px 3rem 0px !important;
+}
+
+/* blog */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  grid-gap: 2rem;
+}
+
+.post-container {
+  background-color: var(--mainGrey);
+}
+
+.page-container {
+  padding: 10px 20px 10px 20px;
+}
+
+.page-heading {
+  font-size: 3rem;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.card a {
+  color: var(--darkGreen);
+  font-weight: bold;
+  letter-spacing: 2px !important;
+}
+
+.card a:hover {
+  color: var(--lightGreen);
+}
+
+.card img {
+  padding: 5px 0px 10px 0px;
 }
 
 /* footer */
