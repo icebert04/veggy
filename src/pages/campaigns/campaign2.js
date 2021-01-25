@@ -4,7 +4,7 @@ import Layout from "../../components/layout";
 
 import Plant from "../../images/Plant-Based.jpg";
 
-const Post2 = () => (
+const Campaign2 = () => (
         <Layout>
 
     <section className="post-container">
@@ -12,7 +12,7 @@ const Post2 = () => (
             <div class="page-container" >
                 <article class="card">
                     <img src={Plant}  />
-                    <h1 class="page-heading">This is Post</h1>
+                    <h1 class="page-heading">This is Campaign</h1>
                 
                 
                 {/* text */}
@@ -115,4 +115,4 @@ const Post2 = () => (
 </Layout>
     );
 
-export default Post2;
+export default Campaign2;

@@ -4,15 +4,15 @@ import Layout from "../../components/layout";
 
 import Plant from "../../images/Plant-Based.jpg";
 
-const Post2 = () => (
+const Campaign1 = () => (
         <Layout>
 
-    <section className="post-container">
-        <div class="container">
-            <div class="page-container" >
+    <section id="post1" className="post-container">
+        <div className="container">
+            <div class="page-container">
                 <article class="card">
                     <img src={Plant}  />
-                    <h1 class="page-heading">This is Post</h1>
+                    <h1 class="page-heading">This is Campaign</h1>
                 
                 
                 {/* text */}
@@ -22,13 +22,13 @@ const Post2 = () => (
             </p>
             <p>
                 For those who didn't know, <b>Brad Traversy</b> is one of the most
-              popular and effective Web Development teachers in the world today
-              <br />
-              He created <b>Traversy Media</b> that is one of the top
-              educational platforms that provides Free courses. His YouTube
-              channel has 677 thousand subscribers where most of his followers
-              learn to do Web Applications from scratch all the way to the end
-              product.
+                popular and effective Web Development teachers in the world today
+                <br />
+                He created <b>Traversy Media</b> that is one of the top
+                educational platforms that provides Free courses. His YouTube
+                channel has 677 thousand subscribers where most of his followers
+                learn to do Web Applications from scratch all the way to the end
+                product.
             </p>
 
             <p>
@@ -107,7 +107,9 @@ const Post2 = () => (
             <h3>Francis Isberto</h3>
             <h4>Friendillion.dev</h4>
             </span>
+            
                 </article>
+                {/* end of text */}
             </div>
         </div>
     </section>
@@ -115,4 +117,4 @@ const Post2 = () => (
 </Layout>
     );
 
-export default Post2;
+export default Campaign1;

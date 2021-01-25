@@ -103,8 +103,10 @@ const Post1 = () => (
                 how to <b>LIVE</b> your life to the happiest level that you can
                 ever imagine.
             </p>
+            <span className="author">
             <h3>Francis Isberto</h3>
             <h4>Friendillion.dev</h4>
+            </span>
                 </article>
                 {/* end of text */}
             </div>

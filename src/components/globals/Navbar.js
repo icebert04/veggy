@@ -22,6 +22,11 @@ state ={
             id:3,
             path:'/blog',
             text:'blog'
+        },
+        {
+            id:4,
+            path:'/campaign',
+            text:'campaign'
         }
     ]
 };
