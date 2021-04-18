@@ -3,26 +3,25 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Aboutbg from "../components/globals/Aboutbg"
-import Title from "../components/globals/Title"
+
+
 // import BackgroundSection from "../components/globals/BackgroundSection";
 // import Info from '../components/Home/info';
+
 
 import Plant from "../images/Plant-Based.jpg";
 
 
 // icons 
-import {FaWeight} from "react-icons/fa"
-import {GiLipstick, GiBodyBalance, GiLifeBar, GiGasMask, GiForestCamp,GiWaterDrop} from "react-icons/gi"
-import {RiMedicineBottleLine, RiHospitalLine} from "react-icons/ri"
-import {SiHappycow} from "react-icons/si"
+import {MdDirectionsBike} from "react-icons/md"
+import {FcPhoneAndroid} from "react-icons/fc"
+import {GiHotMeal} from "react-icons/gi"
 
 
 const AboutPage = ({ data }) => (
   <Layout>
     <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     
-    <Aboutbg/>
     {/* <div className="row"><BackgroundSection 
       img={data.img.childImageSharp.fluid}
       title="" 
@@ -32,92 +31,59 @@ const AboutPage = ({ data }) => (
     </div> */}
     
       <section id="about" >
-      <div className="about-title"><Title  title="eat more plants"></Title></div>
+      <div className="about-title">
+        <h1>About Us</h1>
+        <p className="lead text-muted mb-5">
+        Good Pizza was founded by Ben Berman, <br/> a graduate student studying for his MBA at the Wharton School of the University of Pennsylvania.
+        </p>
+        <br/>
+        <p className="lead text-muted mb-5">
+        When the pandemic hit Philadelphia in March of 2020, Ben had a big batch of dough that he was planning to make into pizzas for a get together with friends.
+        <br/>
+        After realizing that large gatherings probably weren't the best idea, Ben needed a plan to get rid of all that dough...
+                </p>
+      </div>
             <div className="fullscreen-row">
             <div className="text-center">
             <div className="black-background colored-background">
-            <h3>Why Shift to Plant-Based Diet</h3>
-            <p></p>
-            <ul className="li-3 li">
-              <li>
-              <span className="icon"><FaWeight/></span> 
-              
-              <br/> Lose Weight Effortlessly
-              
-              </li>
-              <li>
-              <span className="icon"><GiLipstick/></span> 
-              
-              <br/> Get Healthy Skin, Hair & Nails
-              
-              </li>
-              <li>
-              <span className="icon"><GiBodyBalance/></span> 
-              
-              <br/> Supports your Immune System
-              
-              </li>
-              <li>
-              <span className="icon"><RiMedicineBottleLine/></span> 
-              
-              <br/> Lower your Risk from Cancer & Diabetes
-              
-              </li>
-              <li>
-              <span className="icon"><RiHospitalLine/></span> 
-              
-              <br/> Saves on Hospital costs
-              
-              </li>
-              <li>
-              <span className="icon"><GiLifeBar/></span> 
-              
-              <br/> Live Longer
-              
-              </li>
-            </ul>
+            <h1 className="h1-1">I'm Ben and this is Good Pizza.</h1>
+            <p>
+              What's Good Pizza? Well, I make about 20 pizzas a week in my apartment, give them away for free, and hope to raise some money for good causes. And if it can make a few people smile along the way, that's great too. It's that simple. Every penny that comes in is given to a charity. Every pizza that's eaten is made in my home electric oven. It's a hobby turned into a chance to give back and I am so thankful for your support.
+            </p>
+            
             </div>
             
-            <div className="white-background colored-background">
-            <h3>Save the Environment</h3>
-            <p>Do you know that Animal Agriculture is responsible for more greenhouse gas emissions than the entire transportation sector?<br /> It's also responsible for nearly 90% of the deforestation and is a huge drain on our water supplies.</p>
+            <div className="white-background colored-background step">
+            <h1 className="h1-1"> How It Works </h1>
+            <p>We make about 20 pizzas a week and give them away for free. How do you get one? Sign up for a pizza drop lottery! Pizza is free; donations are always appreciated and 100% of what comes in is given away to good causes.</p>
             
-            <p>So if you eat a plant-based diet, every single day...<br /> you'd be saving  <br /><br /> <br /> </p> 
             <ul className="li li-4">
               <li>
               
-              <p>1,100 gallons of water</p>
+              <h2>STEP 1. ENTER the LOttery for a pizza drop</h2>
+              <p> </p>
               
               <span className="icon">
-              <GiWaterDrop/>
+                <FcPhoneAndroid/>
               </span>
               
               </li>
               <li>
             
+              <h2>STEP 2. SCHEDULE YOUR PICKUP</h2>
+              <p> </p>
 
-              <p> 30 square feet of forest</p>
-
-            <span className="icon">
-            <GiForestCamp/>
-            </span>
-              </li>
-              <li>
-              
-
-              <p>10 pounds of CO2 emissions</p>
               <span className="icon">
-              <GiGasMask/>
+                <MdDirectionsBike/>
               </span>
               </li>
               <li>
               
-              <p> and one animal...</p>
-              
-              
+              <h2>STEP 3. EAT!</h2>
+              <p> </p>
               <span className="icon">
-            <SiHappycow/>
-            </span>
+                <GiHotMeal/>
+              </span>
               </li>
             </ul>
             
@@ -126,32 +92,20 @@ const AboutPage = ({ data }) => (
             
 
             <div className="grey-background colored-background">
-            <h3>Lean, mean and green protein</h3>
-            <p>Show pics with 2 different plans...</p>
-            <ul className="li li-4">
-              <li> <h2>Starter Plan</h2>
-                <div>
-                  <img src={Plant} className="footer-image" alt="Let's Green Up" />
-                </div>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, unde!</p>
-              </li>
-
-              <li><h2>Premium Plan</h2>
-                <div>
-                  <img src={Plant} className="footer-image" alt="Let's Green Up" />
-                </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, eum?</p>
-              </li>
-            </ul>
+            <h1 className="h1-1">WHO WE HELP</h1>
+            <p>All proceeds go to causes we think make the world a better place.</p>
+              <Link to="/">
+                <button className="btn text-uppercase btn-green">See Our Causes & Support</button>
+              </Link>
             </div>
             
 
 
-              <div className="white-background colored-background">
-              <h3>#MeatFreeWeek</h3>
-
-              <h3>#Flexitarian</h3>
-              </div>
+            <div className="white-background colored-background instagram">
+                <h1 className="h1-1">Follow  Us On Instagram</h1>
+                  <a className="instagram-link" href="https://www.instagram.com" target="_blank">@veggieVerde</a>
+                  <img src={Plant}/>
+                </div>
             
             
             </div>

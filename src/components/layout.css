@@ -43,7 +43,7 @@ h4,
 h5,
 h6 {
   font-family: "Courier New", Courier, monospace !important;
-  letter-spacing: 0.25rem !important;
+  letter-spacing: 0.25rem;
 }
 .text-yellow {
   color: var(--mainYellow);
@@ -103,6 +103,19 @@ h6 {
   background: var(--mainGrey);
 }
 
+.h1-1 {
+  font-weight: bold;
+  color: #39b54a;
+}
+
+.white-background .h1-1 {
+  color: var(--darkGreen);
+}
+
+.black-background .h1-1 {
+  color: var(--lightGreen);
+}
+
 .li li {
   padding: 20px 10px 20px 10px !important;
 }
@@ -149,9 +162,46 @@ h6 {
   padding: 0px !important;
 }
 
+/* index */
+.header {
+  padding: 18px;
+  background-color: var(--mainDark);
+  color: white;
+}
+
+.header p {
+  font-weight: bold;
+}
+
+.header h1 {
+  color: var(--lightGreen);
+}
+
 /* about */
 .about-title {
-  padding: 2.5rem 0px 3rem 0px !important;
+  padding: 2.5rem !important;
+}
+
+.about-title h1 {
+  color: var(--darkGreen);
+  font-weight: bold;
+}
+
+.step h2 {
+  font-weight: bold;
+  padding: 5px;
+  font-size: 12px;
+  letter-spacing: 0px;
+}
+
+.instagram-link {
+  color: black;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.instagram-link:hover {
+  color: var(--darkGreen);
+  transition: 0.5s ease;
 }
 
 /* blog */
@@ -213,6 +263,56 @@ h6 {
   .card {
     padding: 1rem;
   }
+}
+
+/* campaign */
+
+.total {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 26px 0px;
+}
+
+.learnmore {
+  background-color: var(--mainWhite);
+  position: absolute;
+  color: #000;
+  font-size: 30px;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.learnmore a {
+  color: var(--darkGreen);
+  font-weight: bold;
+}
+
+.learnmore a:hover {
+  color: var(--lightGreen);
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+.sponsor {
+  position: relative;
+}
+
+.sponsor:hover .learnmore {
+  opacity: 1;
+}
+
+.sponsor img {
+  padding: 5px 0px 10px 0px;
+}
+
+.sponsors {
+  margin: 40px 0px 10px 0px;
 }
 
 /* footer */
@@ -357,6 +457,14 @@ h6 {
   background: var(--mainYellow);
   color: var(--mainBrown) !important;
 }
+.btn-green {
+  border-color: var(--darkGreen);
+}
+.btn-green:hover {
+  color: white;
+  background: var(--darkGreen);
+}
+
 .footer {
   background: var(--mainBrown);
 }

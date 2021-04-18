@@ -11,12 +11,11 @@ import Contact from '../components/Home/contact';
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-  <Homebg/>
-    {/* <BackgroundSection 
-      img={data.img.childImageSharp.fluid}
-      styleClass="home-background" 
-      />
-       */}
+  <div className=" header">
+    <h1>VEGGIE VERDE</h1>
+    <p>Veggie Verde is an effort to raise money for local Manila charities through healthy Salad.</p>
+  </div>
+
 
     
       <Info/>

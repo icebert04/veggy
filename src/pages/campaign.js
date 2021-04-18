@@ -2,11 +2,14 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 
 import Plant from "../images/Plant-Based.jpg";
+import PhilHealth  from "../images/PhilHealth.png"
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Title from "../components/globals/Title"
 // import BackgroundSection from "../components/globals/BackgroundSection";
+
+
+
 
 const CampPage = ({ data }) => (
   <Layout>
@@ -17,25 +20,16 @@ const CampPage = ({ data }) => (
       styleClass="" /> */}
       <section className="py-5">
             <div className="container">
-            <Title title="Campaign"></Title>
+            <h1 className="h1-1">How to donate</h1>
             <div className="fullscreen-row">
             <div className="  text-center">
             <p>
-            So this is our campaigns...
-            </p>
-            <p>This is our 2nd paragraph</p>
+100% of donations go to nonprofits that directly impact the Philadelphia area. Use the link below to make your donation via Venmo. If you'd like to give directly to the charities, that's great too!            </p>
+            <p>But let us know if Good Pizza inspired you to make the donation! You can find us on Venmo (<a href="https://www.instagram.com" target="_blank">@veggieVerde</a>). Please note: donations to Good Pizza are not tax deductible.</p>
+
+            <span className="total">Raised to date: 63,017₱</span>
+
         <div class="blog-container">
-          <article class="card">
-            <img src={Plant}/>
-            <h3>
-            <Link to="../campaigns/campaign4">
-            <a>Campaign 4</a>
-            </Link>
-
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor molestias quis vero commodi unde fugit, dolorem magnam repudiandae ab aut. </p>
-          </article>
-
 
           <article class="card">
             <img src={Plant}/>
@@ -68,9 +62,50 @@ const CampPage = ({ data }) => (
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, cum! </p>
           </article>
         </div>
-            </div>
-            </div>
-            </div>
+
+              <div className="blog-container sponsors">
+
+                <div className="sponsor" >
+                  <img src={PhilHealth} alt="philhealth"/>
+                  <div className="learnmore">
+                  <a target="_blank" href="/">
+                  Learn More</a>
+                  <br/>
+                  <small>Phil Health</small>
+                  </div>
+                  
+                  <h3 className="h2-1">PhilHealth</h3>
+                </div>
+
+                  <div className="sponsor" >
+                  <img src={PhilHealth} alt="philhealth"/>
+                  <div className="learnmore">
+                  <a target="_blank" href="/">
+                  Learn More</a>
+                  <br/>
+                  <small>Phil Health</small>
+                  </div>
+                  
+                  <h3 className="h2-1">PhilHealth</h3>
+                </div>
+
+                  <div className="sponsor" >
+                  <img src={PhilHealth} alt="philhealth"/>
+                  <div className="learnmore">
+                  <a target="_blank" href="/">
+                  Learn More</a>
+                  <br/>
+                  <small>Phil Health</small>
+                  </div>
+                  
+                  <h3 className="h2-1">PhilHealth</h3>
+                </div>
+
+              </div>
+              
+          </div>
+        </div>
+    </div>
         </section>
     
     
